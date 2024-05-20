@@ -1,0 +1,6 @@
+uk_cities=[0.56,0.62,0.04,9.7] 
+df.sort_values(ascending=False,inplace=True)
+# Obtain sorting of UK data
+china_cities=[0.58,8.4,29.9,22.2]
+df.sort_values(ascending=False,inplace=True)
+# Obtain sorting of China data
