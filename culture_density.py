@@ -1,19 +1,12 @@
 cell_density = 5%
 day_count = 0
+# Initialized Data
 
 def day_count(n)
-if cell_density > 90%:
-   return 
+if cell_density <90%：
     day_count += 1
     cell_density *= 2
 # Cell density doubled
-
-
-if __name__ == '__main__':
-    n = int(input("Please enter the number of days："))
-    r = day_count(n)
-    print(r)
-
-    print("On day {day_count}, cell density is {cell_density}.")
-
-print("Total days taken: {day_count}")
+else cell_density > 90%:
+print(min(n-1))
+#The day before obtaining the earliest density exceeding 90%, which is the maximum number of days one can leave
