@@ -1,0 +1,17 @@
+Sleeping=	8	
+Classes=	6	
+Studying=	3.5	
+TV=	2	
+Music=	1
+Other = 24-Sleeping-Classes-Studying-TV-Music
+# Obtain the numerical value for the new entry "Other"
+dic = dict(Sleeping=	8	,Classes=	6	,Studying=	3.5	,TV=	2	,Music=	1,Other = 24-Sleeping-Classes-Studying-TV-Music)
+print(dic)
+# {Sleeping=	8	,Classes=	6	,Studying=	3.5	,TV=	2	,Music=	1,Other = 24-Sleeping-Classes-Studying-TV-Music}
+
+#import library,set pie chart specifications
+import matplotlib.pyplot as plt
+matplotlib.pyplot.pie(x, explode=None, labels=None, colors=None, autopct=None, pctdistance=0.6, shadow=False, labeldistance=1.1, startangle=0, radius=1, counterclock=True, wedgeprops=None, textprops=None, center=0, 0, frame=False,  rotatelabels=False, *, normalize=None, data=None)
+data=dic
+plt.pie(data)
+plt.show()
