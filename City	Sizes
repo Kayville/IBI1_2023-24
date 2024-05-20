@@ -4,3 +4,26 @@ df.sort_values(ascending=False,inplace=True)
 china_cities=[0.58,8.4,29.9,22.2]
 df.sort_values(ascending=False,inplace=True)
 # Obtain sorting of China data
+
+import matplotlib.pyplot as plt
+
+# Create a bar chart for China
+cities = ['Haining', 'Hangzhou','Shanghai','Beijing']
+values = [0.58, 8.4, 29.9, 22.2]
+plt.bar(cities, values, color='skyblue')
+plt.title('Bar chart of data for each city')
+plt.xlabel('city')
+plt.ylabel('data')
+plt.show()
+
+# Create a bar chart for UK
+import matplotlib.pyplot as plt
+cities = ['Edinburgh	', 'Glasgow	', 'Stirling', 'London	']
+values = [0.56,0.62,0.04,9.7]
+plt.bar(cities, values, color='skyblue')
+# Add titles and labels
+plt.title('Bar chart of data for each city')
+plt.xlabel('city')
+plt.ylabel('data')
+# Display bar chart
+plt.show()
