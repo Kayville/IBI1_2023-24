@@ -1,0 +1,19 @@
+import datetime 
+import xml.dom.minidom
+import matplotlib.pyplot as plt
+import xml.sax
+
+DOMTree = parse("/Users/submerge/IBI1_2023-24/Practical14/go_obo.xml")
+root_element = DOMTree.documentElement
+term_elements = root_element.getElementsByTagName("term")
+start_time_DOM = datetime.datetime.now()
+
+
+for term_element in term_elements:
+    namespace = term_element.getElementsByTagName("namespace")[0]
+    if namespace.firstChild.nodeValue == "molecular_function":
+        molecular_function += 1 
+    elif namespace.firstChild.nodeValue == "biological_process":
+        biological_process += 1
+    elif namespace.firstChild.nodeValue == "cellular_component":
+        cellular_components += 1
