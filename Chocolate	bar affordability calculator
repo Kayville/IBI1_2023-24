@@ -1,0 +1,15 @@
+def calculate(total_money, chocolate_bar_price):
+    if total_money < 0 or chocolate_bar_price <= 0:
+        return "Invalid input. Please enter positive values."
+# First ensure that the data is meaningful
+    else:
+        return total_money // chocolate_bar_price
+a=total_money // chocolate_bar_price
+
+import math
+num = a
+result = math.floor(num)
+print(result)
+# Round down to obtain the number of chocolate bars
+change=return total_money --chocolate_bar_price**num
+print(change)
