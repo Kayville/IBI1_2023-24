@@ -1,0 +1,10 @@
+student1.print_details()
+def __init__(self, name, major, code_score, project_score, exam_score):
+        self.name = name
+        self.major = major（BMI,BMS）
+        self.code_score = code_score
+        self.project_score = project_score
+        self.exam_score = exam_score
+
+    def print_details(self):
+        print(f"Name: {self.name}, Major: {self.major}, Code Score: {self.code_score}, Project Score: {self.project_score}, Exam Score: {self.exam_score}")
