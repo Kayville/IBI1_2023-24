@@ -1,0 +1,33 @@
+import datetime 
+import xml.dom.minidom
+import matplotlib.pyplot as plt
+import xml.sax
+
+def __init__(self):
+        self.molecular_functions = 0
+        self.biological_processes = 0
+        self.cellular_components = 0
+        self.current_data = ""
+        self.namespace = ""
+# Initialized several variables and cleared them
+
+def start_element(self, tag, attributes):
+        self.current_data = tag
+# Process an element
+
+def parse_characters(self, content):
+        if self.current_data == "namespace":
+            self.namespace += content
+#Processing character data within elements
+
+def end_element(self, tag):
+        if self.current_data == "namespace":
+            if tag == "molecular_function":
+                self.molecular_functions += 1
+            elif tag == "biological_process":
+                self.biological_processes += 1
+            elif tag == "cellular_component":
+                self.cellular_components += 1
+        self.current_data = ""
+        self.namespace = ""
+# Handling the situation of ending an element
