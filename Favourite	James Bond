@@ -1,0 +1,24 @@
+def isInterval(self,intervalList,number):
+        high=len(intervalList)-1
+        low=0
+        number=number+18
+# Import corresponding age into specific time periods
+        while high>=low:
+            if 1973<(number-intervalList[(high+low)//2][0])<=1986:
+                return 'True'
+            elif 1987<number-intervalList[(high+low)//2][0]<=1994:
+                low=(high+low)//2+1
+            elif 1995<number-intervalList[(high+low)//2][0]<=2005:
+                high=(high+low)//2-1
+            elif 2006<number-intervalList[(high+low)//2][0]<=2021:
+        return 'False'
+if __name__=='__main__':
+    intervalList=[[1973，1986],[1987,1994],[1995，2005],[2006-2021]]
+    solution=Solution()
+    print(intervalList)
+    print(number)
+    print(solution.isInterval(intervalList,number))
+#Convert strings
+dict_data = {[1973，1986],[1987,1994],[1995，2005],[2006-2021]}
+str_data = str(dict_data)
+print(str_data)
