@@ -18,3 +18,22 @@ def c(input_folder, output_folder,duplication):
       if 'duplication' in content:
       new_file_path = os.path.join(output_folder, file)
       shutil.copyfile(file_path, new_file_path)
+
+# Define a duplicate function with two parameters
+def duplicates(output_folder, target):
+    count = 0
+    start = 0
+    output_folder_path = duplicate_genes.fa
+    target=‘GTGTGT’
+
+# Within the loop, continuously search for the index of a specific field in the text to calculate the number of overlapping repetitions until the index no longer exists
+    if start < len(output_folder):
+        index = output_folder.find(target, start)
+        if index != -1:
+            count += 1
+            start = index + 1
+        else:
+            break
+            return count
+  print(count)
+
